@@ -1,0 +1,300 @@
+//==========================//
+/*       HOUSE-PRICE        */ 
+//==========================// 
+
+.house-price
+  position: relative
+  width: 100%
+  padding: 1.3125rem 0
+  border-top: 1px solid rgba(255, 255, 255,.1)
+  background: #000
+  mix-blend-mode: normal
+
+		// .house-price__content
+		&__content
+      display: flex
+      justify-content: space-between
+      align-item: center
+      color: #fff
+
+		// .house-price__text
+
+		&__text
+      display: block
+      position: relative
+
+		// .house-price__title
+
+		&__title
+      font-weight: 700
+      font-size: 2rem
+      line-height: 2.625rem
+      letter-spacing: -0.050256rem
+
+		// .house-price__price
+
+		&__price
+      font-weight: 400
+      font-size: .9375rem
+      line-height: 1.5rem
+      letter-spacing: -0.023558rem
+
+		// .house-price__fullprice
+
+		&__fullprice
+      font-weight: 700
+      font-size: 2rem
+      line-height: 2.625rem
+      text-align: right
+      letter-spacing: -0.804102px
+      &::before
+        content: '$'
+        color: #fff
+
+		// .house-price__sqft
+
+		&__sqft
+      font-size: .9375rem
+      line-height: 1.5rem
+      letter-spacing: -0.023558rem
+      mix-blend-mode: normal
+      text-align: right
+      opacity: 0.6
+      &::before
+        content: '$'
+        color: #fff
+      &::after
+        content: '/sq ft'
+        color: #fff
+
+//==========================//
+/*        HOUSE-INF0        */ 
+//==========================//
+
+.house-info
+
+		// .house-info__content
+
+		&__content
+      display: flex
+      flex-wrap: wrap
+      padding: 3.75rem 0 9.375rem
+		// .house-info__info
+
+		&__info
+      width: 70%
+      padding: 0 1.4375rem 0 0
+
+		// .house-info__contact
+
+		&__contact
+      display: inline-block
+      width: 30%
+
+.gallery
+
+		// .gallery__img
+
+		&__img
+			display: inline-block
+			margin: .3125rem .75rem
+			max-width: 5rem
+			max-height: 5rem
+			img
+            
+            width: 100%
+            height: 100%
+			&:first-child
+        margin: .3125rem .75rem .3125rem 0
+			&:last-child
+        margin: .3125rem 0 .3125rem .75rem
+    
+			// .gallery__img_active
+
+			&_active
+        &.typical-img::before
+            padding-bottom: 74.044%
+		// .gallery__list
+
+		&__list
+      display: flex
+      flex-wrap: wrap
+      padding: 1.25rem 0 0 0 
+
+
+.item-house
+
+		// .item-house_page
+
+		&_page
+      margin: 2.5rem 0
+
+      .item-house__title
+        font-size: 1.25rem
+        &:hover
+          opacity: 1
+      
+		// .item-house__text
+
+		&__text
+      padding: 2.1875rem 1.875rem 1.875rem
+      font-weight: normal
+      font-size: .9375rem
+      line-height: 1.375rem
+      letter-spacing: -0.023558rem
+      color: #000000
+      mix-blend-mode: normal
+      opacity: 0.6
+
+		// .item-house__list
+
+		&__list
+      position: relative
+      border-top: .0625rem solid #E4E4E4
+      columns: 3
+      column-gap: 7.5rem
+      -webkit-columns: 3
+      list-style: none
+      margin: 0
+      padding: 1.875rem 
+
+		// .item-house__list-item
+
+		&__list-item
+      width: 100%
+      break-inside: avoid
+      -webkit-column-break-inside: avoid
+      padding: .625rem 0
+      display: inline-flex
+      align-items: center
+      font-weight: normal
+      font-size: .9375rem
+      line-height: 1.375rem
+      letter-spacing: -0.023558rem
+      &::before
+        content: ''
+        width: 1rem
+        height: 1rem
+        margin: 0 .625rem 0 0 
+        background:
+          image: url('../img/dest/check.svg')
+          size: contain
+          repeat: no-repeat
+        display: block
+
+
+.message-form
+  background: #FFFFFF
+  box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714)
+  border-radius: 25px
+  padding: 1.25rem
+
+.account-user
+  position: relative
+  display: flex
+  align-items: center
+  background: #F5F5F5
+  border-radius: 10px
+  padding: .9375rem 1.0625rem
+
+		// .account-user__icon
+
+		&__icon
+      width: 2.5rem
+      height: 2.5rem
+      img
+        width: 100%
+
+		// .account-user__text
+
+		&__text
+      margin: 0 0 0 .625rem
+      display: block
+
+
+		// .account-user__name
+
+		&__name
+      font-weight: normal
+      font-size: .9375rem
+      line-height: .75rem
+      letter-spacing: -0.023558rem
+
+		// .account-user__link
+
+		&__link
+      font-weight: 700
+      font-size: .8125rem
+      line-height: 1.0625rem
+      letter-spacing: -0.020417rem
+      color: #FFAC12
+
+
+.form
+  margin: 1.25rem 0 0 0
+
+		// .form__item
+
+		&__item
+      width: 100%
+      margin: .3125rem 0
+      padding: 1.25rem 
+      border: 1px solid #EBEBEB
+      box-sizing: border-box
+      border-radius: .625rem
+      font-size: .9375rem
+      line-height: 1.25rem
+      letter-spacing: -0.023558rem
+
+      &:placeholder
+        font-size: .9375rem
+        line-height: 1.25rem
+        letter-spacing: -0.023558rem
+
+		&__textarea
+      padding: 1.25rem 1.25rem 0
+      resize: none
+      height: 6.25rem
+
+		// .form__btn
+
+		&__btn
+      justify-content: center
+      width: 100%
+      border: 0
+      background: #000
+      padding: 1.5625rem 0 1.4375rem
+      color: #fff
+
+
+//==========================//
+/*         LISTINGS         */
+//==========================//
+
+.listings
+
+		// .listings__content
+
+		&__content
+         margin: 0 0 9.375rem
+		// .listings__title
+
+		&__title
+         margin: 0 0 3.75rem
+
+		// .listings__carousel
+
+		&__carousel
+
+.slick-carousel
+   
+		// .slick-carousel__item-house
+
+		&__item-house
+         margin: 0 .9375rem
+         width: 21rem
+
+.slick-list
+   overflow: visible!important
+
+

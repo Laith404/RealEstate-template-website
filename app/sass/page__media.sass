@@ -1,0 +1,143 @@
+//media max - width: 1200px (75 rem ) for table
+
+@media screen and ( max-width: 75rem )
+  .house-info
+
+    // .house-info__content
+
+    &__content
+
+    // .house-info__info
+
+    &__info
+      width: 100%
+      padding: 0
+
+    // .house-info__contact
+
+    &__contact
+      width: 100%
+      padding: 0
+
+  .gallery
+
+    // .gallery__img
+
+    &__img
+      margin: .3125rem .625rem
+      &:first-child
+        margin: .3125rem .375rem .3125rem 0
+      &:last-child
+        margin: .3125rem 0 .3125rem .3125rem
+
+
+    &__list
+      justify-content: center
+
+
+//media max - width: 600px (37.5 rem ) for phone
+@media screen and ( max-width: 37.5rem  )
+  //==========================//
+  /*         GALLERY          */ 
+  //==========================//
+  .gallery
+
+    // .gallery__img
+
+    &__img
+      margin: .3125rem .3125rem
+      &:first-child
+        margin: .3125rem .3125rem .3125rem 0
+      &:last-child
+        margin: .3125rem 0 .3125rem .3125rem
+      &:not(.active)
+        img
+          width: 3.125rem
+          height: 3.125rem
+      // .gallery__img_active
+
+      &_active
+
+    // .gallery__list
+
+    &__list
+
+
+
+  //==========================//
+  /*       HOUSE-PRICE        */ 
+  //==========================//
+  .house-price
+
+    // .house-price__text
+
+    &__text
+      font-size: .75rem
+
+    // .house-price__title
+
+    &__title
+      font-size: 1.25rem
+      line-height: 1.25
+
+    // .house-price__price
+
+    &__price
+      font-size: .75rem
+      line-height: 1.25
+    // .house-price__fullprice
+
+    &__fullprice
+      font-size: 1.25rem
+      line-height: 1.25
+
+    // .house-price__sqft
+
+    &__sqft
+      font-size: .75rem
+
+  .item-house
+
+      &__text
+         padding: 1.5625rem .9375rem 1.25rem
+      // .item-house_page
+      &_page
+        margin: 1.5rem 0
+      // .item-house__title
+
+      &__title
+
+
+      // .item-house__list
+
+      &__list
+        padding: .9375rem .625rem
+        column-gap: 1rem
+
+      // .item-house__list-item
+
+      &__list-item
+        font-size: .625rem
+        &::before
+          width: .875rem
+          height: .875rem
+          margin: 0 .3125rem 0 0
+
+
+.house-info
+
+		// .house-info__content
+
+		&__content
+      padding: 3.75rem 0 3.75rem 0
+		// .house-info__info
+
+		&__info
+
+
+		// .house-info__contact
+
+		&__contact
+
+
+

@@ -1,0 +1,601 @@
+
+//* media.css for index.html
+
+//media max - width: 1200px (75 rem ) for table
+
+@media screen and ( max-width: 75rem )
+  //* block's style
+  .btn
+    justify-content: center
+    font-size: .875rem
+
+  .hamburger
+    display: block
+    z-index: 10000000
+  
+  .title
+    font-weight: 700
+    font-size: 1.75rem
+    line-height: 2.5rem
+
+    &::before
+      content: ''
+      max-width: 8.5625rem
+
+  .text
+    font-size: .875rem
+    line-height: 1.25rem
+
+  .overflow-hidden
+    overflow: hidden
+    height: 100%
+    position: relative
+  //==========================//
+  /*          HEADER          */ 
+  //==========================//
+  .header
+    // .header__content
+    &__content
+      padding: 1.5rem 0 0 0!important
+
+
+    // .header__right
+
+    &__right
+      position: absolute
+      width: 30%
+      height: 100vh
+      top: 0
+      left: auto
+      right: -100%
+      bottom: 0
+      padding: 5rem 0 0 0
+      background: #fff
+      z-index: 100000
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      transition: .15s all linear
+
+      &_active
+        right: 0
+      
+    // .header__nav
+
+    &__nav
+      margin: 0
+      display: flex
+      flex-direction: column
+      width: 100%
+      margin: 2.1875rem 0 0 0
+
+    // .header__link
+
+    &__link
+      color: #000
+      font-size: 1.25rem
+      width: 100%
+      padding: 25px 1.875rem
+      margin:  0!important
+      border-bottom: 1px solid rgba(0, 0, 0, .15)
+    // .header__btn
+
+    &__btn
+      width: 100%
+      border-radius: 0
+      padding: 1.25rem 2.5rem
+      font-size: 1.25rem
+  
+  //==========================//
+  /*          BANNER          */ 
+  //==========================//
+  .banner
+
+    // .banner__content
+
+    &__content
+      padding: 12.5rem 2.5rem 0 
+    // .banner__header
+
+    &__header
+      width: 60%
+
+    // .banner__title
+
+    &__title
+      font-size: 3.75rem
+      line-height: 3.5rem
+    // .banner__subtitle
+
+    &__subtitle
+      font-size: 1rem
+      line-height: 1.25rem
+
+  
+  //=============================//
+  /*          GOODHANDS          */
+  //============================//
+
+  .goodhands
+
+    // .goodhands__content
+
+    &__content
+      padding: 2.5rem 0 0
+
+    // .goodhands__icon
+
+    &__icon
+      max-width: 43.9%
+      img
+        transform: translateY(0.875rem)
+      
+      &_right
+        img
+          transform: translateY(-2.875rem)
+
+    // .goodhands__info
+
+    &__info
+      width: calc(100% - 43.9%)
+      margin: 1.25rem 0
+    // .goodhands__btn
+    
+    &__btn
+      padding: 1.25rem 2.5rem
+
+  //=============================//
+  /*           HOUSE            */
+  //============================//
+
+  .house
+
+    // .house__content
+
+    &__content
+      padding: 6.5rem 0 6.5rem 0
+    // .house__title
+
+    &__title
+      margin: 0 0 2.75rem 0
+
+    // .house__bar
+
+    &__bar
+      margin: 0
+
+    // .house__setting
+
+    &__setting
+
+    &__list-setting
+      position: relative
+      padding: 0 1rem 0 2rem
+      box-shadow: none
+      border-bottom: 0
+      margin: 0
+      background: transparent
+    
+    &__list-setting_active
+      margin: 0 0 1rem 0
+    // .house__name-setting
+
+    &__name-setting
+      padding: 1.7625rem 0 1.7625rem 1.875rem
+      font-size: 1rem
+
+    // .house__grid
+
+    &__grid
+      margin: 2.75rem 0 0 
+  
+  .item-house
+
+    // .item-house__title
+    
+    &__title
+      font-size: 1.375rem
+      padding: 1.2rem
+    
+    // .item-house__icon
+
+    &__icon
+      &.typical-img:before
+        padding: 35.51%
+  //=============================//
+  /*           HANDS            */
+  //============================//
+  .hands
+
+    // .hands__content
+
+    &__content
+      padding: 6.375rem 0
+
+    // .hands__btn
+
+    &__btn
+      padding: 1.25rem 2.5rem
+
+
+  //=============================//
+  /*           REVIEWS          */
+  //============================//
+  .reviews
+
+    // .reviews__content
+
+    &__content
+      padding: 6.375rem 0
+    // .reviews__text
+
+    &__text
+      font-size: 1.25rem
+      line-height: 1.85rem
+
+    // .reviews__user
+
+    &__user
+      margin: 2.75rem 0 
+
+
+  .user-item
+    padding: 1.5rem 2rem
+
+
+    // .user-item__title
+
+    &__title
+      font-size: .75rem
+
+
+    // .user-item__rank
+
+    &__rank
+      font-size: .625rem
+
+  //=============================//
+  /*           DREAMS           */
+  //============================/
+
+  .dreams
+
+    // .dreams__content
+
+    &__content
+      padding: 3.5rem 0 2.125rem
+
+    // .dreams__title
+
+    &__title
+      font-size: 1.75rem
+      line-height: 2.1875rem
+
+    // .dreams__btn
+
+    &__btn
+      padding: 1.2625rem 2.5rem
+
+
+
+
+
+  //=============================//
+  /*           FOOTER           */
+  //============================//
+  .footer
+
+    // .footer__content
+
+    &__content
+      padding: 2.75rem .75rem 6.375rem
+
+    // .footer__social
+
+    &__social
+      margin: 1.275rem
+
+//media max - width: 768px (48 rem ) for mini-table
+
+@media screen and ( max-width: 48rem )
+
+  
+  .title
+    font-weight: 700
+    font-size: 1.2rem
+    line-height: 1.5rem
+
+    &::before
+      content: ''
+      max-width: 8.5625rem
+
+  .text
+    font-size: .875rem
+    line-height: 1rem
+
+
+  //==========================//
+  /*          HEADER          */ 
+  //==========================//
+  .header
+
+    // .header__right
+
+    &__right
+      width: 75%
+
+  //==========================//
+  /*          BANNER          */ 
+  //==========================//
+  .banner
+
+    // .banner__header
+
+    &__header
+      width: 100%
+
+    // .banner__title
+
+    &__title
+      font-size: 2.75rem
+      line-height: 2.5rem
+
+    // .banner__subtitle
+
+    &__subtitle
+      font-size: .875rem
+      line-height: 1.25rem
+
+  //=============================//
+  /*          GOODHANDS          */
+  //============================//
+
+  .goodhands
+    // .goodhands__content
+    &__content
+      padding: 2rem 0
+      flex-direction: column
+
+      // .goodhands__content_right
+      &_right
+        padding: 1.5rem 0 4rem
+
+    // .goodhands__icon
+
+    &__icon
+      max-width: 80%
+      img
+        transform: translateY(0.875rem)
+        filter: drop-shadow(0 0rem 1.375rem rgba(0,0,0,0.3))
+      
+      &_right
+        img
+          transform: translateY(1.125rem)
+
+    // .goodhands__info
+
+    &__info
+      width: 100%
+      margin: 40px 0 0 0
+
+    // .goodhands__btn
+    
+    &__btn
+      padding: 1.25rem 2.5rem
+
+  //=============================//
+  /*           HOUSE            */
+  //============================//
+
+  .house
+
+    // .house__content
+    &__content
+      padding: 3.5rem 0
+
+
+    // .house__title
+    
+    &__title
+      margin: 0 0 2.75rem 0
+
+    // .house__bar
+
+    &__bar
+      margin: 0
+      flex-direction: column
+    // .house__setting
+
+    &__setting
+      width: 100%
+      &::before
+        width: 100%
+        height: .0625rem
+    &__column
+      width: calc(100% / 2 - 60px )
+
+    // .house__name-setting
+
+    &__name-setting
+      padding: 1.4625rem 0 1.4625rem 1.875rem
+      font-size: 1rem
+
+    // .house__grid
+
+    &__grid
+      margin: 2.75rem auto 0 
+  
+  .item-house
+
+    // .item-house__title
+    
+    &__title
+      font-size: 1.375rem
+      padding: 1.2rem
+    
+    // .item-house__icon
+
+  //=============================//
+  /*           HANDS            */
+  //============================//
+  .hands
+
+    &__text
+      width: 80%
+
+  //=============================//
+  /*           REVIEWS          */
+  //============================//
+  .reviews
+
+    // .reviews__content
+
+    &__content
+      padding: 3.375rem 0
+    // .reviews__text
+
+    &__text
+      font-size: 1.25rem
+      line-height: 1.85rem
+      width: 80%
+
+    // .reviews__user
+
+    &__user
+      margin: 2.75rem 0 
+      flex-direction: column
+      width: 100%
+
+  .user-item
+    margin: 0
+    width: 100%
+
+  //=============================//
+  /*           DREAMS           */
+  //============================/
+
+  .dreams
+
+    // .dreams__content
+
+    &__content
+      padding: 3.5rem 0 2.125rem
+      flex-direction: column
+
+    // .dreams__title
+
+    &__title
+      font-size: 1.45rem
+      line-height: 2.1875rem
+
+    // .dreams__btn
+
+    &__btn
+      margin: .75rem 0 0 0
+      padding: 1.2625rem 2.5rem
+
+
+
+
+
+  //=============================//
+  /*           FOOTER           */
+  //============================//
+  .footer
+
+    // .footer__content
+
+    &__content
+      padding: 2.75rem .75rem 2.375rem
+      flex-direction: column
+
+    &__info
+      display: flex
+      flex-direction: column
+      align-items: center
+    // .footer__social
+    &__social
+      margin: 1.275rem
+
+    // .footer__nav
+
+    &__nav
+      width: 100%
+      margin: 0 auto
+      flex-direction: column
+      text-align: center
+    
+    &__nav-item
+      margin: .625rem 0
+
+//media max - width: 600px (37.5 rem ) for phone
+@media screen and ( max-width: 37.5rem  )
+
+  //=============================//
+  /*           HOUSE            */
+  //============================//
+
+  .house
+
+
+
+    &__column
+      width: calc(100% / 2 - 15px)
+      margin: .625rem .3125rem
+
+    // .house__name-setting
+
+    &__name-setting
+      padding: 1.4625rem 0 1.4625rem 1.875rem
+      font-size: 1rem
+
+    // .house__grid
+
+    &__grid
+      margin: 2.75rem -0.625rem 0 -0.3125rem
+  
+  .item-house
+
+    &__icon
+      &.typical-img:before
+        padding: 30.51%
+    // .item-house__title
+    
+    &__title
+      font-size: 1rem
+      padding: .75rem
+    
+    &__info-icon
+      padding: .75rem 0
+
+      span
+        font-size: .75rem
+        &::before
+          margin: 0 .3125rem 0 0
+
+//media max - width: 360px (22.5 rem ) for small phone
+@media screen and ( max-width: 22.5rem )
+  //==========================//
+  /*          BANNER          */ 
+  //==========================//
+  .banner
+    
+    // .banner__content
+    &__content
+      padding: 12.5rem 1rem 0
+    // .banner__header
+
+    &__header
+      width: 100%
+  
+    // .banner__title
+
+    &__title
+      font-size: 2.4rem
+
+    // .banner__subtitle
+
+    &__subtitle
+      font-size: .875rem
+      line-height: 1.25rem
+  

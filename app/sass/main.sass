@@ -1,0 +1,823 @@
+@import config
+@import page
+//* block's style
+*
+  padding: 0
+  margin: 0
+.title
+  font-weight: 700
+  font-size: 3.125rem
+  line-height: 4.0625rem
+  letter-spacing: -0.078526rem
+  display: block
+  &::before
+    content: ''
+    max-width: 10.5625rem
+    width: 100%
+    height: .25rem
+    margin: 0 0 1.0625rem
+    background: linear-gradient(90deg, #FFAC12 0%, #000000 94.96%)
+    border-radius: 2px
+    display: block
+
+.text
+  font-size: 1.25rem
+  line-height: 1.75rem
+  letter-spacing: -0.03141rem
+  color: #000000
+  mix-blend-mode: normal
+  opacity: 0.6
+
+
+.btn
+  border-radius: 0 1.125rem 0 0
+  font-style: normal
+  font-weight: bold
+  font-size: 1.0625rem
+  line-height: 1
+  letter-spacing: -0.026699rem
+  display: inline-flex
+  align-items: center
+  &:hover
+    text-decoration: none
+  &::after
+    content: ''
+    width: 1.25rem
+    height: .625rem
+    margin: 0 0 0 1.1875rem
+    background:
+      image: url('../img/dest/arrow.svg')
+      size: contain
+      repeat: no-repeat
+    display: block
+
+.hamburger // not desktop visibility
+  display: none
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+  background: #fff
+  width: 35px
+
+// scroll website
+html
+  &::-webkit-scrollbar 
+    width: 10px
+    background-color: #fff
+
+
+  &::-webkit-scrollbar-thumb 
+    background-color: $accent
+
+
+  &::-webkit-scrollbar-track 
+    background-color: #fff
+
+//* layout template page style element's
+
+//==========================//
+/*          HEADER          */ 
+//==========================//
+.header
+  position: absolute
+  width: 100%
+  flex: 2 0 auto
+
+    // .header__page
+
+		&__page
+      position: relative
+      background: #000
+      
+      
+      &-content
+        padding: 2rem 0!important
+        
+      
+		// .header__contant
+
+		&__content
+      padding: 2rem 0 0 0
+      display: flex
+      justify-content: space-between
+      align-items: center
+		// .header__left
+
+		&__left
+    // not
+
+		// .header__logo
+
+		&__logo
+      width: auto
+      position: relative
+      img
+        width: 100%
+        pointer-events: none
+		// .header__right
+
+		&__right
+      display: flex
+      align-items: center
+
+		// .header__nav
+
+		&__nav
+      display: block
+      position: relative
+      margin: 0 3.75rem 0 0
+		// .header__link
+
+		&__link
+      color: #fff
+      margin: 0 1.875rem
+      font:
+        size: .9375rem
+        weight: 700
+      line-height: 1
+      letter-spacing: -0.023558rem
+      &:first-child
+        margin: 0 1.875rem 0 0
+      &:last-child
+        margin: 0 0 0 1.875rem
+      &:hover
+        color: #fff
+        text-decoration: none
+        
+		// .header__btn
+
+		&__btn
+      padding: .875rem 2.5rem
+      background: $accent
+      color: #000
+      &:hover
+        color: #000
+      &::after
+        filter: invert(100%) sepia(0%) saturate(7534%) hue-rotate(409deg) brightness(309%) contrast(291%)
+
+//==========================//
+/*           MAIN           */ 
+//==========================//
+.main
+  flex: 1 0 auto
+
+//==========================//
+/*          BANNER          */ 
+//==========================//
+
+.banner
+  max-height: 53.125rem
+  height: 100%
+  background:
+    image: url('../img/dest/banner.png')
+    size: cover
+    repeat: no-repeat
+		// .banner__content
+
+		&__content
+      padding: 12.5rem 0 0
+		// .banner__header
+
+		&__header
+      position: relative
+      width: calc(100% / 2)
+      color: #fff
+		// .banner__title
+
+		&__title
+      display: block
+      font-weight: 700
+      font-size: 5rem
+      line-height: 5rem
+      letter-spacing: -0.125641rem
+      margin: 0 0 .6875rem
+
+		// .banner__subtitle
+
+		&__subtitle
+      display: block
+      font-size: 1.25rem
+      line-height: 1.75rem
+      letter-spacing: -0.03141rem
+      margin: .6875rem 0 0 0 
+		// .banner__footer
+
+		&__footer
+      margin: 11rem 0 0 0
+      padding: 2.3125rem 0 2.3125rem 2.5rem
+      background: #fff
+
+
+		// .banner__btn
+
+		&__btn
+      color: #000 
+      &:hover
+        color: #000
+
+
+//=============================//
+/*          GOODHANDS          */
+//============================//
+
+.goodhands
+
+		// .goodhands__content
+
+		&__content
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      padding: 5.5rem 0 0
+
+      // .goodhands__content_right
+
+      &_right
+        justify-content: flex-end
+        padding: 0
+
+		// .goodhands__icon
+
+		&__icon
+      position: relative
+      width: auto
+      max-width: 48.9%
+      width: 100%
+      
+      &:before
+        padding: 47.53%
+      img
+        width: 100%
+        filter: drop-shadow(0 3.875rem 3.375rem rgba(0, 0, 0, 0.3))
+        border-radius: 0 3.5625rem 0 0
+        transform: translateY(2.875rem)
+      
+      // .goodhands__icon_right
+      &_right img
+        border-radius: 3.5625rem 0 0 0
+        transform: translateY(-10.625rem)
+
+		// .goodhands__info
+
+		&__info
+      padding: 0 0 0 3.75rem
+      width: 42%
+
+      // .goodhands__content_right
+
+      &._right
+        padding: 0 3.75px 0 0
+
+		// .goodhands__title
+
+		&__title
+      margin: 0 0 1.25rem 0
+      
+		// .goodhands__text
+
+		&__text
+      max-width: 80%
+      margin: 0 0 1.875rem 0
+		// .goodhands__btn
+
+		&__btn
+      color: #fff
+      background:
+        color: #000
+      padding: 1.5625rem 2.5rem 1.4375rem
+      &:hover
+        color: #fff
+
+
+//=============================//
+/*           HOUSE            */
+//============================//
+
+.house
+  background: #F5F5F5
+		// .house_item-setting
+		&_item-setting
+
+		// .house__content
+
+		&__content
+      padding: 13.5rem 0 22.6875rem 0
+
+
+		// .house__title
+
+		&__title
+      margin: 0 0 3.75rem 0
+
+		// .house__bar
+
+		&__bar
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      background: #fff
+      box-shadow: 0px 2rem 2.125rem rgba(0, 0, 0, 0.133714)
+      border-radius: 1.5625rem
+      margin: 0 -.9375rem
+
+
+		// .house__setting
+
+		&__setting
+      position: relative
+      width: calc(100% / 4)
+      display: block
+      cursor: pointer
+      
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: .0625rem
+        height: 100%
+        background:
+          color: #E4E4E4
+        display: block
+      &:first-child
+
+        &::before
+          content: none
+      
+
+
+		// .house__name-setting
+
+		&__name-setting
+      padding: 3.0625rem 0 3.0625rem 1.875rem
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        position: relative
+        width: .75rem
+        height: .5rem
+        background:
+          image: url('../img/dest/arrow_dawn.svg')
+          size: contain
+          repeat: no-repeat
+        margin: 0 0 0 .5625rem
+        display: block
+
+        
+
+		// .house__list-setting
+
+		&__list-setting
+      position: absolute
+      width: calc(100% + .0625rem)
+      height: 0
+      top: 75%
+      left: 0
+      right: 0
+      bottom: auto
+      padding: .5rem 1rem 1rem 2rem
+      background: #fff
+      list-style-type: none
+      box-shadow: 0 2rem 2.125rem rgba(0, 0, 0, 0.133714)
+      display: block
+      z-index: -1
+      opacity: 0
+      border: 1px solid #E4E4E4
+      border-top: 0
+    
+		// .house__list-setting_active
+
+		&__list-setting_active
+      height: auto
+      overflow: visible
+      opacity: 1
+      z-index:  1
+
+		// .house__item-setting
+
+		&__item-setting
+      width: 100%
+      margin: .3125rem 0
+      display: block
+
+
+		// .house__link
+      
+		&__link
+      width: 100%
+      height: 100%
+      color: #000
+      font-size: 1rem
+      padding: .3125rem 0
+      display: block
+      &:hover
+        color: #000
+        
+      
+      
+
+		// .house__grid
+
+		&__grid
+      margin: 3.75rem -1.875rem 0
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+		// .house__column
+
+		&__column
+      width: calc(100% / 3 - 1.875rem)
+      margin: .9375rem .9375rem
+      display: block
+      position: relative
+
+.item-house
+  background: #FFFFFF
+  box-shadow: 0px 32px 34px rgba(0, 0, 0, 0.133714)
+  border-radius: 25px
+  overflow: hidden
+  display: block
+
+		// .item-house__icon
+
+		&__icon
+      width: 100%
+      height: auto
+      display: block
+      &.typical-img:before
+        padding: 39.51%
+
+		// .item-house__title
+
+		&__title
+      padding: 1.875rem
+      font-weight: 700
+      font-size: 1.5rem
+      line-height: 1.9375rem
+      letter-spacing: -0.037692rem
+      overflow: hidden
+      text-overflow: ellipsis
+      white-space: nowrap
+      transition: .5s all ease-in-out
+      color: #000
+      display: block
+      &:hover
+        color: #000
+        opacity: .65
+		// .item-house__info
+
+		&__info
+      position: relative
+      border-top: .0625rem solid #E4E4E4
+      display: flex
+      flex-direction: row
+      align-items: center
+      
+
+		// .item-house__info-icon
+		&__info-icon
+      position: relative
+      width: calc(100% / 3)
+      height: 100%
+      padding: 1.25rem 0
+      
+      span
+        font-weight: 700
+        font-size: 1.0625rem
+        line-height: 1.375rem
+        letter-spacing: -0.026699rem
+        display: flex
+        align-items: center
+        justify-content: center
+        &::before
+          margin: 0 .625rem 0 0
+      &:first-child
+        &::before,&::after
+          content: none
+      &:last-child
+        &::before,&::after
+          content: none
+      &::before,&::after
+        content: ''
+        width: .0625rem
+        height: 100%
+        background: #E4E4E4
+        position: absolute
+        top: 0
+        bottom: 0
+        display: block
+      &::before
+        left: 0
+      &::after
+        right: 0
+
+      // .item-house__info-icon_bed
+
+      &_bed span::before
+        content: ''
+        width: .875rem
+        height: .625rem
+        background:
+          image: url('../img/dest/bed.svg')
+          size: contain
+          repeat: no-repeat
+        display: block
+
+      // .item-house__info-icon_shower
+
+      &_shower span::before
+        content: ''
+        width: 1rem
+        height: 1rem
+        background:
+          image: url('../img/dest/shower.svg')
+          size: contain
+          repeat: no-repeat
+        display: block
+      
+      // .item-house__info-icon_size
+
+      &_size span::before
+        content: ''
+        width: 1rem
+        height: 1rem
+        background:
+          image: url('../img/dest/size.svg')
+          size: contain
+          repeat: no-repeat
+        display: block
+
+
+
+//=============================//
+/*           HANDS            */
+//============================//
+
+.hands
+  background: #000
+		// .hands__content
+
+		&__content
+      padding: 9.375rem 0 
+      text-align: center
+		// .hands__title
+
+		&__title
+      color: #fff
+      &::before
+        margin: 0 auto 1.0625rem
+
+		// .hands__text
+
+		&__text
+      width: 41%
+      margin: 1.25rem auto 1.875rem
+      color: #fff
+      
+
+		// .hands__btn
+
+		&__btn
+      background: $accent
+      padding: 1.5625rem 2.5rem
+      color: #fff
+      &:hover
+        color: #fff
+      &::after
+        filter: invert(100%) sepia(0%) saturate(7534%) hue-rotate(409deg) brightness(309%) contrast(291%)
+
+
+//=============================//
+/*           REVIEWS          */
+//============================//
+
+.reviews
+
+		// .reviews__content
+
+		&__content
+      padding: 9.375rem 0
+		// .reviews__text
+
+		&__text
+      font-size: 1.5rem
+      line-height: 1.9375rem
+      width: 31%
+      margin: 0 auto
+      max-height: 12.5rem
+      min-height: 12.5rem
+      overflow: hidden
+      text-overflow: ellipsis
+      -webkit-line-clamp: 6
+      display: -webkit-box
+      -webkit-box-orient: vertical
+      &::before
+        max-width: 100%
+
+		// .reviews__user
+
+		&__user
+      margin: 3.75rem -1.875rem 0
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+
+.user-item
+  display: flex
+  align-items: center
+  padding: 2.875rem 2.5rem
+  width: calc( 100% / 3 - 1.875rem )
+  margin: 0 .9375rem
+  cursor: pointer
+
+		// .user-item_active
+		&_hidden
+      display: none
+		// .user-item_active
+		&_active
+      background: #000
+      color: #fff
+
+		// .user-item__icon
+
+		&__icon
+      border-radius: 100%
+      overflow: hidden
+      width: 3.0625rem
+      height: 3.0625rem
+
+		// .user-item__text
+
+		&__text
+      margin: 0 0 0 1.25rem
+      display: block
+
+		// .user-item__title
+
+		&__title
+      font-weight: 700
+      font-size: 15px
+      line-height: 20px
+      letter-spacing: -0.376923px
+
+		// .user-item__rank
+
+		&__rank
+      font-weight: 400
+      font-size: .9375rem
+      line-height: 1.25rem
+      letter-spacing: -0.023558rem
+      color: #979797
+
+
+//=============================//
+/*           DREAMS           */
+//============================//
+
+
+.dreams
+  background: #000
+		// .dreams__content
+
+		&__content
+      padding: 5rem 0 3.125rem
+      color: #fff
+      display: flex
+      justify-content: space-between
+      align-items: center
+
+		// .dreams__title
+
+		&__title
+      font-weight: bold
+      font-size: 2.625rem
+      line-height: 3.4375rem
+      letter-spacing: -0.065961rem
+      span
+        color: $accent
+
+
+		// .dreams__btn
+
+		&__btn
+      padding: 1.5625rem 2.5rem
+      background: $accent
+      color: #000
+      &:hover
+        color: #000
+      &::after
+        filter: invert(100%) sepia(0%) saturate(7534%) hue-rotate(409deg) brightness(309%) contrast(291%)
+
+
+//=============================//
+/*           FOOTER           */
+//============================//
+
+.footer
+  background: #000
+  flex: 0 0 auto
+		// .footer__content
+
+		&__content
+      padding: 3.75rem 0 9.375rem 
+      display: flex
+      justify-content: space-between
+      color: #fff
+
+		// .footer__info
+
+		&__info
+      display: block
+
+		// .footer__logo
+
+		&__logo
+      width: auto
+      display: block
+		// .footer__social
+
+		&__social
+      display: flex
+      align-items: center
+      margin: 1.875rem 0 0 0 
+
+		// .footer__social-link
+
+		&__social-link
+			// .footer__social-link_facebook
+
+			&_facebook
+        width: .625rem
+        height: 1.25rem
+        margin: 0 .625rem
+        background:
+          image: url('../img/dest/facebook.svg')
+          size: contain
+          repeat: no-repeat
+        display: block
+
+			// .footer__social-link_twitter
+
+			&_twitter
+        width: 1.375rem
+        height: 1.125rem
+        margin: 0 .625rem
+        background:
+          image: url('../img/dest/twitter.svg')
+          size: contain
+          repeat: no-repeat
+        display: block
+			// .footer__social-link_instagram
+
+			&_instagram
+        width: 1.375rem
+        height: 1.375rem
+        margin: 0 .625rem
+        background:
+          image: url('../img/dest/instagram.svg')
+          size: contain
+          repeat: no-repeat
+        display: block
+
+		// .footer__nav
+
+		&__nav
+      width: 60%
+      display: flex
+      justify-content: space-between
+      list-style-type: none
+		// .footer__column-title
+
+		&__nav-title
+      font-weight: 700
+      font-size: .9375rem
+      line-height: 1.25rem
+      letter-spacing: -0.023558rem
+      margin: 0 0 .3125rem 0
+      display: inline-block
+
+		// .footer__list
+
+		&__list
+      list-style-type: none
+
+		// .footer__list-item
+
+		&__list-item
+      margin: .3125rem 0
+
+		// .footer__link
+
+		&__link
+      font-weight: 400
+      font-size: .9375rem
+      line-height: 1.25rem
+      margin: .3125rem 0
+      letter-spacing: -0.023558rem
+      color: #979797
+      display: inline-block
+      &:hover
+        color: #979797
+
+
+@import main__media
+@import page__media
